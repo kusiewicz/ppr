@@ -46,6 +46,10 @@ export async function Reviews() {
     cache: "no-store",
   }).then((res) => res.json());
 
+  if (!reviews) {
+    return null;
+  }
+
   return (
     <section>
       <div className="flex items-center space-x-2 mb-6">
@@ -70,7 +74,9 @@ export async function Reviews() {
                       {renderStars(review.rating, true)}
                     </div>
                   </div>
-                  <p className="text-gray-300 leading-relaxed">{review.comment}</p>
+                  <p className="text-gray-300 leading-relaxed">
+                    {review.comment}
+                  </p>
                 </div>
               </div>
             </CardContent>

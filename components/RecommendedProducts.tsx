@@ -61,6 +61,10 @@ export async function RecommendedProducts() {
     }
   ).then((res) => res.json());
 
+  if (!products) {
+    return null;
+  }
+
   return (
     <section className="mb-12">
       <div className="flex items-center space-x-2 mb-6">

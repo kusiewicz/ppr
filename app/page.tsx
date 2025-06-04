@@ -5,7 +5,6 @@ import {
 import { Reviews, ReviewsSkeleton } from "@/components/Reviews";
 import { SingleProduct } from "@/components/SingleProduct";
 import { Suspense } from "react";
-// import { Suspense } from "react";
 
 export default function FragranceApp() {
   return (

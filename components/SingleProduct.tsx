@@ -73,18 +73,22 @@ export async function SingleProduct() {
     `${process.env.URL}/api/single-product`
   ).then((res) => res.json());
 
+  if (!product) {
+    return null;
+  }
+
   return (
     <div className="grid gap-8 mb-12 md:grid-cols-2">
       <div className="space-y-4">
         <Card className="bg-white border-0 overflow-hidden shadow-xl h-104">
-            <Image
-              src={product.images[0] || "/placeholder.svg"}
-              alt={product.name}
-              width={400}
-              height={400}
-              className="w-full object-cover h-full"
-              quality={100}
-            />
+          <Image
+            src={product.images[0] || "/placeholder.svg"}
+            alt={product.name}
+            width={400}
+            height={400}
+            className="w-full object-cover h-full"
+            quality={100}
+          />
         </Card>
       </div>
 
