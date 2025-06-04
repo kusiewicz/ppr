@@ -42,9 +42,12 @@ export const ReviewsSkeleton = () => (
 );
 
 export async function Reviews() {
-  const reviews: Review[] = await fetch(`${process.env.URL}/api/reviews`, {
-    cache: "no-store",
-  }).then((res) => res.json());
+  const reviews: Review[] = await fetch(
+    `https://ppr-ovieyof93-kusiewiczs-projects.vercel.app/api/reviews`,
+    {
+      cache: "no-store",
+    }
+  ).then((res) => res.json());
 
   if (!reviews) {
     return null;

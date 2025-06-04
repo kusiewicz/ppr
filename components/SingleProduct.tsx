@@ -70,7 +70,7 @@ export const SingleProductSkeleton = () => (
 
 export async function SingleProduct() {
   const product: Product = await fetch(
-    `${process.env.URL}/api/single-product`
+    `https://ppr-ovieyof93-kusiewiczs-projects.vercel.app/api/single-product`
   ).then((res) => res.json());
 
   if (!product) {

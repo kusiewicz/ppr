@@ -55,7 +55,7 @@ export const RecommendedProductsSkeleton = () => (
 
 export async function RecommendedProducts() {
   const products: Product[] = await fetch(
-    `${process.env.URL}/api/recommended-products`,
+    `https://ppr-ovieyof93-kusiewiczs-projects.vercel.app/api/recommended-products`,
     {
       cache: "no-store",
     }
