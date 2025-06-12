@@ -27,7 +27,7 @@ export default function Header() {
             </Badge>
           </div>
           <Avatar className="w-8 h-8 shadow-lg">
-            <AvatarImage src="/placeholder-user.jpg" />
+            <AvatarImage />
             <AvatarFallback className="bg-gray-700">
               <User className="w-4 h-4" />
             </AvatarFallback>
@@ -36,4 +36,4 @@ export default function Header() {
       </div>
     </header>
   );
-} 
+}
