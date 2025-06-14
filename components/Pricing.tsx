@@ -38,7 +38,7 @@ function LoadingDots() {
 
 async function UserSpecificDetails({ productId }: { productId: string }) {
   const data = await fetch(
-    `https://ppr-ovieyof93-kusiewiczs-projects.vercel.app/api/single-product?id=${productId}`,
+    `https://frag-api.onrender.com/api/single-product?id=${productId}`,
     {
       cache: "no-store",
     }

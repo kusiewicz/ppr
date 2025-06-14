@@ -43,7 +43,7 @@ export const ReviewsSkeleton = () => (
 
 export async function Reviews() {
   const reviews: Review[] = await fetch(
-    `https://ppr-ovieyof93-kusiewiczs-projects.vercel.app/api/reviews`,
+    `https://frag-api.onrender.com/api/reviews`,
     {
       cache: "no-store",
     }

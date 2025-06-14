@@ -54,7 +54,7 @@ export const SingleProductSkeleton = () => (
 
 export async function SingleProduct() {
   const response = await fetch(
-    `https://ppr-ovieyof93-kusiewiczs-projects.vercel.app/api/single-product`
+    `https://frag-api.onrender.com/api/single-product`
   );
 
   if (!response.ok) {
